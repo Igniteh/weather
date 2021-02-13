@@ -5,9 +5,7 @@ import Weather from './Weather';
 function App() {
   const [lat, setLat] = useState(0);
   const [lng, setLng] = useState(0);
-  const [rate, setRate] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (navigator.geolocation) {
